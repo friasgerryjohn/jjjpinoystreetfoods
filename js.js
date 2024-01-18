@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('mobile-menu');
-    const body = document.body;
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navList = document.querySelector('.nav-list');
 
     menuToggle.addEventListener('click', function () {
+        body.classList.toggle('menu-show');
         body.classList.toggle('menu-open');
-        body.classList.toggle('menu-closed');
     });
 });
