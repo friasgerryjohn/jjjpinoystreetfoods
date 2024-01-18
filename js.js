@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var navList = document.querySelector('.nav-list');
 
     menuToggle.addEventListener('click', function () {
-        body.classList.toggle('menu-show');
-        body.classList.toggle('menu-open');
+       navList.classList.toggle('show');
+        menuToggle.classList.toggle('open');
     });
 });
